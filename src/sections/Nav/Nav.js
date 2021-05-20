@@ -13,6 +13,7 @@ export const NavContainer = styled.div`
     box-sizing: border-box;
     margin: 1em auto;
     padding: 0px 2em;
+    text-transform: uppercase;
 `
 
 export const NavTitleWrap = styled.div`
