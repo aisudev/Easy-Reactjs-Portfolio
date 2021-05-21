@@ -3,6 +3,7 @@ import Overlay from './component/Overlay';
 import Header from './sections/Header';
 import Info from './sections/Info';
 import Nav from './sections/Nav';
+import Skill from './sections/Skill';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </section>
       <section>
         <Info/>
+      </section>
+      <section>
+        <Skill/>
       </section>
     </div>
   );
