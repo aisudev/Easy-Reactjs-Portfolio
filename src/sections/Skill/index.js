@@ -42,7 +42,7 @@ const skill = [
         value: 0
     },
     {
-        name: 'NodeJS (Expressjs, Fastify)',
+        name: 'NodeJS (Expressjs, Fastifyjs)',
         value: 60
     },
     {
