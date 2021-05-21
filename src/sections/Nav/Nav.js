@@ -2,15 +2,18 @@ import styled, { keyframes } from "styled-components";
 import { CgMenu, CgClose } from 'react-icons/cg'
 
 export const NavContainer = styled.div`
+    position: fixed;
     background-color: rgba(0, 0, 0, .7);
     border-radius: 25px;
-    width: 98%;
+    width: 95%;
     height: 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 1em auto;
     padding: 0px 2em;
     text-transform: uppercase;
@@ -30,7 +33,7 @@ export const NavTitle = styled.a`
 export const NavContentWrap = styled.div`
     font-weight: 500;
     font-size: 18px;
-    @media (max-width:812px){
+    @media (max-width:1024px){
         display: none;
     }
 `
@@ -40,7 +43,7 @@ export const NavContentWrapMobile = styled.div`
     font-size: 18px;
     overflow: hidden;
     display: none;
-    @media (max-width:812px){
+    @media (max-width:1024px){
         display: flex;
         box-sizing: border-box;
         z-index: 1000;
@@ -62,7 +65,7 @@ export const NavContentList = styled.ul`
 
 export const NavContentItem = styled.li`
     display: inline;
-    @media (max-width:812px){
+    @media (max-width:1024px){
         display: flex;
     }
     width: 100px;
@@ -81,7 +84,7 @@ export const NavContenLink = styled.a`
         cursor: pointer;
         border-bottom: 5px solid #fff;
     }
-    @media (max-width:812px){
+    @media (max-width:1024px){
         margin-top: 1em;
     }
 `
@@ -90,7 +93,7 @@ export const MenuIcon = styled(CgMenu)`
     display: none;
     color: #fff;
     font-size: 24px;
-    @media (max-width:812px){
+    @media (max-width:1024px){
         display: block;
     }
     &:hover{
