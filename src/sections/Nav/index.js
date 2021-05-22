@@ -12,7 +12,7 @@ export default function Nav({ section = [] }) {
         <>
             <NavContainer>
                 <NavTitleWrap>
-                    <NavTitle href="#Header" >Aisu</NavTitle>
+                    <NavTitle href="#Header" >Thanatorn.TK</NavTitle>
                 </NavTitleWrap>
                 <MenuIcon onClick={() => setIsShow(true)} />
                 <NavContentWrap>
