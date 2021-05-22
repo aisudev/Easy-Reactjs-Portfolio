@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Scrollspy from 'react-scrollspy'
 import {
     NavContainer, NavContenLink, NavContentItem, NavContentList, CloseIcon,
     NavContentWrap, NavTitle, NavTitleWrap, NavContentWrapMobile, MenuIcon
@@ -32,15 +33,17 @@ export default function Nav({ section = [] }) {
             <NavContentWrapMobile isShow={isShow} >
                 <CloseIcon onClick={() => setIsShow(false)} />
                 <NavContentList>
-                    {
-                        section.map((val, index) => (
-                            <NavContentItem key={index}>
-                                <NavContenLink key={index} href={`#${val}`} >
-                                    {val}
-                                </NavContenLink>
-                            </NavContentItem>
-                        ))
-                    }
+                    <Scrollspy items={section} currentClassName='is-current' >
+                        {
+                            section.map((val, index) => (
+                                <NavContentItem key={index}>
+                                    <NavContenLink key={index} href={`#${val}`} >
+                                        {val}
+                                    </NavContenLink>
+                                </NavContentItem>
+                            ))
+                        }
+                    </Scrollspy>
                 </NavContentList>
             </NavContentWrapMobile>
         </>

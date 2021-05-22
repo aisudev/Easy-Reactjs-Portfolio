@@ -17,6 +17,7 @@ export const NavContainer = styled.div`
     margin: 1em auto;
     padding: 0px 2em;
     text-transform: uppercase;
+    z-index: 555;
 `
 
 export const NavTitleWrap = styled.div`
@@ -46,6 +47,7 @@ export const NavContentWrapMobile = styled.div`
     font-size: 18px;
     overflow: hidden;
     display: none;
+    z-index: 999;
     @media (max-width:1024px){
         display: flex;
         box-sizing: border-box;
@@ -109,6 +111,7 @@ export const CloseIcon = styled(CgClose)`
     color: #fff;
     right: 0;
     margin: 1em;
+    z-index: 999;
     &:hover{
         cursor: pointer;
     }

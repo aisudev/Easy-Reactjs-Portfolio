@@ -1,7 +1,7 @@
 import { Grid, makeStyles } from '@material-ui/core'
 import React from 'react'
 import {
-    SkillContainer, SkillHeader, SkillWrap, ProgressBar, ProgressValue, SkillTitle
+    SkillContainer, SkillHeader, SkillWrap, ProgressBar, ProgressValue, SkillTitle, ContainerWrap
 } from './Skill'
 
 const useStyles = makeStyles(theme => ({
@@ -18,7 +18,7 @@ const skill = [
         value: 70
     },
     {
-        name: 'Machine Learning / Deep Learning',
+        name: 'Artificial Intelligence',
         value: 10
     },
     {
@@ -47,7 +47,7 @@ const skill = [
     },
     {
         name: 'DevOP',
-        value: 50
+        value: 30
     },
 ]
 
@@ -58,27 +58,29 @@ export default function Skill() {
     return (
         <SkillContainer>
             <SkillTitle>
-                "SKILL"
+                {/* "SKILL" */}
             </SkillTitle>
-            <Grid
-                container spacing={2}
-            >
-                {
-                    skill.map(item => (
-                        <Grid
-                            item xs={12} sm={12} md={6} lg={4}
-                            className={classes.skillContainer}
-                        >
-                            <SkillWrap>
-                                <SkillHeader>{item.name}</SkillHeader>
-                                <ProgressBar>
-                                    <ProgressValue value={item.value}/>
-                                </ProgressBar>
-                            </SkillWrap>
-                        </Grid>
-                    ))
-                }
-            </Grid>
+            <ContainerWrap>
+                <Grid
+                    container spacing={2}
+                >
+                    {
+                        skill.map(item => (
+                            <Grid
+                                item xs={12} sm={12} md={6} lg={4}
+                                className={classes.skillContainer}
+                            >
+                                <SkillWrap>
+                                    <SkillHeader>{item.name}</SkillHeader>
+                                    <ProgressBar>
+                                        <ProgressValue value={item.value}/>
+                                    </ProgressBar>
+                                </SkillWrap>
+                            </Grid>
+                        ))
+                    }
+                </Grid>
+            </ContainerWrap>
         </SkillContainer>
     )
 }

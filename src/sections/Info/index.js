@@ -43,7 +43,7 @@ export default function Info() {
                                     I'm Ice, a Software Engineer student...
                                 </InfoHeader>
                                 <InfoContent>
-                                    I'm a guy who born in Chiangmai, Thailand and studying year 3 of Software engineering at CAMT, Chiangmai University. Now, I learn about Data science because I want to be AI researcher but first I should to good at manage and analysis datasets. In my freetime I love to training MMA, travel, learning code, play game, and sleep. If You want to contact me you can contact me with this email: tk.thanatorn@gmail.com or text me on social media:)
+                                    I'm a guy who born in Chiangmai, Thailand and studying year 3 of Software engineering at CAMT, Chiangmai University. Now, I learn about MachineLearning scientist because I want to be AI researcher but first I should to good at manage and analysis datasets. In my freetime I love to training MMA, travel, learning code, play game, and sleep. If You want to contact me you can contact me with this email: tk.thanatorn@gmail.com or text me on social media:)
                                 </InfoContent>
                             </InfoWrap>
                         </Grid>

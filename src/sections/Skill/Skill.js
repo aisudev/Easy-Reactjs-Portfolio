@@ -3,9 +3,17 @@ import styled from "styled-components";
 export const SkillContainer = styled.div`
     width: 100%;
     height: max-content;
+    min-height: 100vh;
     margin: 4em 0;
     box-sizing: border-box;
     padding:0 1em;
+    display: flex;
+    align-items: center;
+`
+
+export const ContainerWrap = styled.div`
+    width: 100%;
+    height: min-content;
 `
 
 export const SkillWrap = styled.div`
