@@ -28,6 +28,9 @@ export const NavTitle = styled.a`
     color: #fff;
     font-size: 36px;
     font-weight: 600;
+    @media (max-width:1024px){
+    font-size: 24px;
+    }
 `
 
 export const NavContentWrap = styled.div`

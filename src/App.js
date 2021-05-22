@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Overlay src={bg} autoPlay loop muted />
-      <Nav section={['Information', 'Skill', 'Experience', 'Contact']} />
+      <Nav section={['Information', 'Skill', 'Experience', 'Work', 'Contact']} />
       <section>
         <Header/>
       </section>
